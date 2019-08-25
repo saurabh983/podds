@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+android:id="@+id/backgrooundchange"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/tick"
+            android:layout_alignParentTop="true"
+            android:id="@+id/tick"
+            android:layout_marginBottom="24dp"
+            />
+        <TextView
+            android:id="@+id/main1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="@string/main1"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_below="@id/tick"
+            />
+        <TextView
+            android:id="@+id/supportedDevices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:layout_below="@id/main1"
+            android:text="@string/supportedDevices" />
+        <TextView
+            android:id="@+id/main2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_below="@id/supportedDevices"
+            android:text="@string/main2" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mainHide"
+            android:layout_below="@id/main2"
+            android:id="@+id/mainHide"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/mode_switch"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:elevation="2dp"
+        android:text="DarkMode    "
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
